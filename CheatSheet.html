@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CheatSheet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h4>Georg_Seng</h4>
+<hr>
+<hr>
+	<h2>Unit 1</h2>
+	<a href="#U2"> Unit 2 (HTML,CSS)</a>
+    <pre>
+      <u>World Wide Web General</u>
+      1. What are the most essential technologies that made the World Wide Web such a success?
+          The W3(World Wide Web) is written in some kind of open source protocol. Which is a big advantage,
+          because other systems that were existent at this time hadn’t been so friendly to developers.
+      2. How are resources (HTML pages, images, etc.) addressed in the web?
+          They are addressed with a URL.
+      3. What are the general components of a URL?
+          A Uniform Resource Locator (URL or web address) has a scheme that includes an information about what it is: a file or a news.
+          Considering what it is there will be a specific part, like the username, host, port, path, query, fragment in case the URL starts with HTTPS://
+
+      <u>Web Server</u>
+      1. What is a web server?
+          Basically, a web server is an expensive rack (this is the case where they are stored above of each other) mountable PC,
+          which is mostly located at a server farm where the Internet connection is extremely fast.
+      2. What does a web server?
+          The job of a Web Server is to serve you a web page which is shared with his web server software.
+          If it is a more complex web page it also will have a kind of IO which means: you can log In or press buttons.
+      3. How can a content be stored on a web server?
+          The files that are stored on a webserver are stored in a data base or simply as a file on the desktop.
+      4. How can contents in web pages described?
+          In HTML or in combination with some flash player software ore scripting language for making the web page more lifely.
+
+      <u>Web Client</u>
+      1. What is a web client?
+          A web client is every device that is connected to the internet.
+      2. What does a web client?
+          A web client sends data to servers that will analyze the request and serve the client with the requested information.
+      3. Web Client and Web Browser is the same?
+          No, as I Sayed the client will only send and receives packages,
+          and the web browser will display this content and manage what the client should request next from the server.
+
+      <u>Hello World</u>
+      1. What is the HTML head element?
+          It is a container were metadata are stored like the name of the page and a view tags
+          that make it easier for you and the search engine to know what the content of this page is.
+          One can say that you can search for that tags and the engine will show you pages with those tags.
+      2. What does &lt;! DOCTYPE html&gt; mean?
+          It basically says your web browser what kind of document he is going to display.
+      3. What are the two top elements within the HTML element?
+          I think &lt;p&gt; &lt;/p&gt; is one of them. The other is &lt;h1&gt; &lt;/h1&gt;
+      4. How to emphasize a text and how is it displayed in the browser?
+          A text can be emphasized with a style attribute and the web browser reads this out and displays it in the before defined style.
+      5. How to markup important text and how is it displayed in the browser?
+          A text can be formatted by HTML Formatting Elements, e.g. &lt;bold&gt; or &lt;mark&gt; and then they are displayed in the before defined format.
+    </pre>
+    
+    
+    	<h2 id="U2">Unit 2</h2>
+    <pre>
+      <u>HTML</u>
+      1. Name the components of html elements properly?
+          Heading (&lt;h1&gt;to&lt;/h6&gt;), Paragraphs (&lt;p&gt;&lt;/p&gt;) and empty raw (&lt;br&gt;)
+      2. Identify void elements and how they are denoted?
+          Void Elements have only an start tag like: &lt;br&gt;,&lt;hr&gt;,&lt;img&gt;,&lt;meta&gt;
+      3. Identify attributes?
+          Attributes are elements that are expressed in a starting tag like title and herf
+      4. Write down the correct DOCTYPE declaration for HTML 5
+          &lt;!DOCTYPE html&gt;
+      5. Write down syntactically correct statements for the following elements
+          o Article (&lt;article&gt; &lt;/article&gt;)
+          o Body (&lt;body&gt; &lt;/body&gt;)
+          o line break (&lt;br&gt;)
+          o Headings (&lt;h1&gt;,…&lt;/h6&gt;)
+          o Section with meta-information (&lt;head&gt; &lt;/head&gt;)
+          o Top level element (&lt;html&gt; &lt;/html&gt;)
+          o Image named Team.jpg (&lt;img src="Team.jpg" alt="Team"&gt;)
+          o Paragraph (&lt;p&gt; &lt;/p&gt;)
+          o Section (&lt;section&gt; &lt;/section&gt;)
+          o Label appearing in the title bar (&lt;title&gt; &lt;/title&gt;)
+          o Link to other pages (&lt;a&gt; &lt;/a&gt;)
+          o Comment (&lt;!-- Hello --&gt; )
+          o Head with title and meta elements
+             &lt;head&gt;
+               &lt;title&gt;HelloWorld&lt;/title&gt;
+               &lt;meta charset="utf-8"&gt;
+             &lt;/head&gt;
+
+      <u>CSS</u>
+      1. Name the components of a CSS rule property
+          Selector and in curly brackets is the declaration with a property:
+          with value and semicolon you can define as many declarations as you want.
+      2. Use combinations properly: direct child, descendant, adjacent sibling, siblings 
+          o A descendant connects all elements that are descendants of a specified element
+          o An adjacent sibling selector selects all elements, that are adjacent siblings of a specified element.
+            It is important, that they have the same parent because they follow them immediately. 
+          o The general sibling selector selects all elements that are siblings of a specified element. 
+      3. Specify colors by color names and in hexadecimal notation
+          There are different ways to declare a color.          
+          o By name: &lt;h1 style="color:Tomato"&gt;Hello World&lt;/h1&gt;
+          o By hex: &lt;h1 style="color:#8000ff"&gt;Hello World&lt;/h1&gt;   
+      4. Declarations for color, background color
+          Declaration for color see above example
+          Declaration for background-color:
+          o By name: &lt;h1 style="background-color:Tomato"&gt;Hello World&lt;/h1&gt;
+          o By hex: &lt;h1 style="background-color:#8000ff"&gt;Hello World&lt;/h1&gt;      
+      5. Pseudo classes for the &lt;a&gt; element
+          You can make for nearly everything pseudo classes that can do some useful things e.g.
+          the link will change the color when the cursor goes over it.  
+      6. Declaration for background image
+          You can specifiy a background for the body and you also declare a background for a paragraph as well.
+          A background image can be declared in a css area, like a paragraph. 
+           &lt;style&gt;
+            body {
+                background-image: url("img_tree.png");
+                background-repeat: no-repeat;
+                background-position: right top;
+                margin-right: 200px;
+                background-attachment: fixed;
+            }
+           &lt;/style&gt; 
+     7. Declaration for text alignment (left,right,center,justify)
+         Is used to define the horizontal alignment of text.
+     8. Declaration for text decoration (overline, underline, line-through)
+         o Text-decoration: non is used to remove decorations from a text
+         o Text-decoration: overline or line-through or underline is used to decorate a text.     
+     9. Declaration for text transformation (uppercase, lowercase, capitalize)
+         This is used to specify, how the (first)letter in a word should look like, e.g.
+          &lt;style&gt;          
+           p.capitalize {
+               text-transform: capitalize;
+           }
+          &lt;/style&gt;
+          &lt; class="capitalize"&gt;HelloWorld&lt;/p&gt;
+    10. Identify the difference between serif and sans-serif fonts
+         Serif fonts haves small lines at the end in some characters, a typical serif font us "Times New Roman".
+         Non-serif font do have clear characters, without any lines at the end, e.g. Arial or Verdana.
+    11. Declarations for font families
+         Font families is a specific font family, e.g. Arial, Arial Black or Arial Narrow.
+    12. Declarations for font style normal and italic
+         This defines if a paragraph is written in normal style or in italic
+          &lt;style&gt;
+           p.normal {
+               font-style: normal;
+           }
+           p.italic {
+               font-style: italic;
+           }
+          &lt;style&gt;
+    13. Declarations for font sizes
+         This declaration sets the size of the text. There are three different ways to declare it:
+         one of them is to declare them by pixel, e.g. font-size: 20px; the second option is to declare them by “Em”.
+         The advantage of “Em”s is, that the browser can scale them, e.g. font-size: 1.875em;
+         The third option is the declaration by Percent, e.g. font-size: 120%;
+    14. Declarations for font weights
+         This specifies if the font is normal, light, bold.    
+    </pre>
+    <hr>
+    <hr>
+    <h4>2BHIF</h4>
+  </body>
+</html>
